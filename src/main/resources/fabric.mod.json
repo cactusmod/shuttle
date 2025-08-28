@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "shuttle",
+	"version": "${version}",
+	"name": "Shuttle",
+	"description": "A lightweight open-source addon library for adding extension support to your mods",
+	"authors": [
+		"Dwarslooper"
+	],
+	"contact": {
+		"homepage": "https://cactusmod.xyz/",
+		"sources": "https://github.com/cactusmod/shuttle"
+	},
+	"license": "ARR",
+	"icon": "assets/shuttle/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.dwarslooper.cactus.shuttle.test.TestClientMod"
+		],
+		"shuttle": [
+			"com.dwarslooper.cactus.shuttle.test.TestAddonEntrypoint"
+		]
+	},
+	"depends": {
+		"java": ">=17",
+		"fabricloader": "*",
+		"minecraft": "*"
+	}
+}
